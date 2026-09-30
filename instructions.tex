@@ -187,6 +187,20 @@ supplemental material using \verb|\appendix|. Any content following this command
 will be suppressed in the final output if the \texttt{hidesupplement} option is
 given.
 
+\section{Page Limit}
+
+The main paper is limited to 9 pages at submission time; the references,
+appendix, and submission checklist do not count. Accepted papers may add one
+additional page for the camera-ready version. The main content is taken to end
+at the bibliography or \verb|\appendix|, whichever comes first; you may also mark
+the end explicitly with \verb|\automlendofmaincontent|. If the main content of a
+submission exceeds the limit, the document still compiles, but everything beyond
+the limit is typeset in dark red and the first page states by how many lines the
+limit is exceeded. As this relies on positions recorded in the \texttt{.aux}
+file, the marking appears after the second compilation run. The check is only
+active for submissions; it is disabled by the \texttt{final} and
+\texttt{preprint} options.
+
 \section{Note Regarding Line Numbering at Submission Time}
 
 To ensure that line numbering works correctly with display math mode, please do
